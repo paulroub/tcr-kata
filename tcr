@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+IFS=$'\n\t'
+
+set -x
+
+npm test && \
+    git commit -m"Tests passed" ||
+    (ls *.js | fgrep -v test.js | xargs git checkout)
