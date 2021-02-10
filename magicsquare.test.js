@@ -54,3 +54,13 @@ test('fail with not all digits present', () => {
 
     expect(magicsquare.correctContents(grid)).toBe(false);
 });
+
+test('succeed with not all digits present', () => {
+    const grid = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ];
+
+    expect(magicsquare.correctContents(grid)).toBe(true);
+});

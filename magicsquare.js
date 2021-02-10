@@ -14,7 +14,18 @@ function correctDimensions(square) {
 }
 
 function correctContents(square) {
-    return false;
+    const allDigits = square.flat();
+
+    return allDigits.indexOf(1) >= 0 &&
+        allDigits.indexOf(1) >= 0 &&
+        allDigits.indexOf(2) >= 0 &&
+        allDigits.indexOf(3) >= 0 &&
+        allDigits.indexOf(4) >= 0 &&
+        allDigits.indexOf(5) >= 0 &&
+        allDigits.indexOf(6) >= 0 &&
+        allDigits.indexOf(7) >= 0 &&
+        allDigits.indexOf(8) >= 0 &&
+        allDigits.indexOf(9) >= 0;
 }
 
 module.exports = {
