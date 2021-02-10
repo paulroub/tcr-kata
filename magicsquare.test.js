@@ -15,3 +15,13 @@ test('fail on 0 columns in a row', () => {
 test('succeed on 3 columns in a row', () => {
     expect(magicsquare.correctColumnCount([1,2,3])).toBe(true);
 });
+
+test('fail on 3x2 grid', () => {
+    const grid = [
+        [1,2],
+        [1,2],
+        [1,2]
+    ];
+
+    expect(magicsquare.correctDimensions(grid)).toBe(false);
+});
