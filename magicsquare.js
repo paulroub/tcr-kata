@@ -7,7 +7,10 @@ function correctColumnCount(row) {
 }
 
 function correctDimensions(square) {
-    return false;
+    return correctRowCount(square) &&
+        correctColumnCount(square[0]) &&
+        correctColumnCount(square[1]) &&
+        correctColumnCount(square[2]);
 }
 
 module.exports = {

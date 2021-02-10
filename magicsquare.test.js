@@ -35,3 +35,12 @@ test('fail on 2x3 grid', () => {
     expect(magicsquare.correctDimensions(grid)).toBe(false);
 });
 
+test('succeed on 3x3 grid', () => {
+    const grid = [
+        [1,2,3],
+        [1,2,3],
+        [1,2,3]
+    ];
+
+    expect(magicsquare.correctDimensions(grid)).toBe(true);
+});
