@@ -1,5 +1,7 @@
-function magicsquare(square) {
+function correctRowCount(square) {
     return square.length === 3;
 }
 
-module.exports = magicsquare;
+module.exports = {
+    correctRowCount
+};
