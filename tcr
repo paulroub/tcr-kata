@@ -3,11 +3,11 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-set -x
-
 # don't try if we're mid-edit and not compiling yet
 node -c *.js
 
 npm test && \
-    git commit -am"Tests passed" ||
-    (ls *.js | fgrep -v test.js | xargs git checkout)
+    git commit -am"Tests passed" || \
+    (ls *.js | fgrep -v test.js | xargs git checkout) && \
+    git pull && \
+    git push

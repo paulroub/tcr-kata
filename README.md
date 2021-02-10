@@ -18,6 +18,8 @@ If tests fail, we revert any production code changes (but not tests) since the l
 
 Run `./tcrloop` while coding. This will run the test/commit/revert script every time a file is edited and the files are in a compilable state.
 
+After a successful (or reversion) the script will attempt to `git pull` and `git push`.
+
 ## The exercise - Magic Square
 
 Write a function to validate 3x3 magic squares.  A magic square is one where all rows, all columns, and both diagonals sum to the same total. For 3x3 magic squares containing the digits 1-9, that total will be 15 in all directions.
