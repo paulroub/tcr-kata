@@ -29,7 +29,13 @@ function correctContents(square) {
 }
 
 function rowSum(row) {
-    return 6;
+    let sum = 0;
+
+    row.forEach((number) => {
+        sum += number;
+    });
+
+    return sum;
 }
 
 module.exports = {

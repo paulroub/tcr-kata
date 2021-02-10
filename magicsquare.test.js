@@ -67,4 +67,5 @@ test('succeed with not all digits present', () => {
 
 test('get sum of row digits', () => {
     expect(magicsquare.rowSum([1,2,3])).toBe(6);
+    expect(magicsquare.rowSum([4,5,6])).toBe(15);
 });
