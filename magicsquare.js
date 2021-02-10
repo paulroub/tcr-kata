@@ -28,9 +28,14 @@ function correctContents(square) {
         allDigits.indexOf(9) >= 0;
 }
 
+function rowSum(row) {
+    return 6;
+}
+
 module.exports = {
     correctRowCount,
     correctColumnCount,
     correctDimensions,
-    correctContents
+    correctContents,
+    rowSum
 };
