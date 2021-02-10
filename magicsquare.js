@@ -13,8 +13,13 @@ function correctDimensions(square) {
         correctColumnCount(square[2]);
 }
 
+function correctContents(square) {
+    return false;
+}
+
 module.exports = {
     correctRowCount,
     correctColumnCount,
-    correctDimensions
+    correctDimensions,
+    correctContents
 };

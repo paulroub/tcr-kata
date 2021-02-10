@@ -44,3 +44,13 @@ test('succeed on 3x3 grid', () => {
 
     expect(magicsquare.correctDimensions(grid)).toBe(true);
 });
+
+test('fail with not all digits present', () => {
+    const grid = [
+        [1,2,3],
+        [1,2,3],
+        [1,2,3]
+    ];
+
+    expect(magicsquare.correctContents(grid)).toBe(false);
+});
