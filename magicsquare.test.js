@@ -11,3 +11,7 @@ test('succeed with 3 rows', () => {
 test('fail on 0 columns in a row', () => {
     expect(magicsquare.correctColumnCount([])).toBe(false);
 });
+
+test('succeed on 3 columns in a row', () => {
+    expect(magicsquare.correctColumnCount([1,2,3])).toBe(true);
+});

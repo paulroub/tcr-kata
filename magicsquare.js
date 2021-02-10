@@ -3,7 +3,7 @@ function correctRowCount(square) {
 }
 
 function correctColumnCount(row) {
-    return false;
+    return row.length === 3;
 }
 
 module.exports = {
